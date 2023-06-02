@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaksi Belanja"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/txttitle"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:padding="10dp"
+        android:layout_below="@id/txttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:drawableLeft="@android:drawable/ic_input_add"
+        android:id="@+id/edittitle"
+        android:hint="Input Nama Barang"
+        android:background="@drawable/shape_border"
+        android:layout_marginTop="20dp"/>
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_below="@id/edittitle"
+        android:id="@+id/datepicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:datePickerMode="spinner"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnproses"
+        android:text="Proses"
+        android:layout_below="@id/datepicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_border"
+        android:drawableLeft="@android:drawable/btn_star"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtoutput"
+        android:text="Detail Transaksi :"
+        android:layout_below="@id/btnproses"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+
+</RelativeLayout>
+</ScrollView>
